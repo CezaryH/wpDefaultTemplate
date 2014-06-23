@@ -1,0 +1,50 @@
+{
+  "repositories": [
+	{
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+	{
+		"type" : "git",
+		"url" : "https://github.com/CezaryH/wordpress-gulp-theme-boilerplante"
+	},
+	{
+		"type" : "git",
+		"url" : "https://github.com/CezaryH/installer"
+	},	
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress",
+        "type": "wordpress-core",
+        "version": "3.9",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/WordPress/WordPress/archive/3.9.1.zip"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+	"CezaryH/installer" : "dev-master",
+	"wordpress": "3.9",
+	"jarednova/timber" : "*",
+	"CezaryH/wordpress-gulp-theme-boilerplante" : "dev-master"
+  },
+  "extra": {
+        "wordpress_wp_contentdir" : "content",
+        "wordpress_coredir"       : "wp",
+        "wordpress_wp_config"     : {
+            "site_url"           : "http://testwp.loc",
+            "db_host"            : "localhost",
+            "db_name"            : "testwp",
+            "db_user"            : "root",
+            "db_pass"            : "root",
+            "wp_debug"           : true,
+            "wp_content_dir"     : "content",
+			"wp_uploads_dir"	 : "uploads"
+        }
+  },
+  "minimum-stability" : "dev"
+}

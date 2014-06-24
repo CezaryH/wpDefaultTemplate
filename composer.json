@@ -20,7 +20,7 @@
         "version": "3.9",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/WordPress/WordPress/archive/3.9.1.zip"
+          "url": "http://wordpress.org/latest.zip"
         }
       }
     }

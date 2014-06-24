@@ -37,6 +37,8 @@
     },
     "extra": {
         "wordpress_wp_config": {
+			"wp_content_dir" : "content",
+			"wp_core_dir" : "wp",		
         	"WP_DEFAULT_THEME" : "Default Theme",
             "site_url": "http://wpauto.loc",
             "db_host": "localhost",

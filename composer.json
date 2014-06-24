@@ -39,12 +39,13 @@
         "wordpress_wp_config": {
 			"wp_content_dir" : "content",
 			"wp_core_dir" : "wp",		
-        	"WP_DEFAULT_THEME" : "Default Theme",
-            "site_url": "http://wpauto.loc",
+        	"WP_DEFAULT_THEME" : "WP Gulp",
+            "site_url": "http://wpTest.loc",
             "db_host": "localhost",
             "db_user": "root",
             "db_pass": "root",
-            "db_name": "wpauto"
+            "db_name": "wptest",
+			"generate_auth_keys" : false
         }
     },
   "minimum-stability" : "dev"

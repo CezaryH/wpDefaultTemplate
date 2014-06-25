@@ -36,7 +36,7 @@
     "scripts": {
         "post-install-cmd": [
 			"Wordpress\\Composer\\InstallerTasks::wpConfig",
-			"Wordpress\\Composer\\InstallerTasks::installWP"
+			"Wordpress\\Composer\\InstallerTasks::installWP",
 			"Wordpress\\Composer\\InstallerTasks::buildTemplate"
 		]
     },
@@ -44,7 +44,7 @@
         "wordpress_wp_config": {
 			"wp_content_dir" : "content",
 			"wp_core_dir" : "wp",		
-        	"WP_DEFAULT_THEME" : "WP Gulp",
+        	"WP_DEFAULT_THEME" : "wordpress-gulp-theme-boilerplante",
             "site_url": "http://wpTest.loc",
             "db_host": "localhost",
             "db_user": "root",

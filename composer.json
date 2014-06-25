@@ -30,10 +30,15 @@
 	"CezaryH/installer" : "dev-master",
 	"wordpress": "3.9",
 	"jarednova/timber" : "*",
-	"CezaryH/wordpress-gulp-theme-boilerplante" : "dev-master"
+	"CezaryH/wordpress-gulp-theme-boilerplante" : "dev-master",
+	"wp-cli/wp-cli" : "dev-master"
   },
     "scripts": {
-        "post-install-cmd": "Wordpress\\Composer\\InstallerTasks::wpConfig"
+        "post-install-cmd": [
+			"Wordpress\\Composer\\InstallerTasks::wpConfig",
+			"Wordpress\\Composer\\InstallerTasks::installWP"
+			"Wordpress\\Composer\\InstallerTasks::buildTemplate"
+		]
     },
     "extra": {
         "wordpress_wp_config": {
@@ -44,8 +49,7 @@
             "db_host": "localhost",
             "db_user": "root",
             "db_pass": "root",
-            "db_name": "wptest",
-			"generate_auth_keys" : false
+            "db_name": "wptest"
         }
     },
   "minimum-stability" : "dev"
